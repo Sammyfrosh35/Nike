@@ -8,9 +8,9 @@ const Button = ({label, iconURL}) => {
    rounded-full text-white '>
     {label}
 
-    <img src={iconURL} alt="arrow right icon" 
+    {iconURL && <img src={iconURL} alt="arrow right icon" 
     className='ml-2 rounded-full w-h h-5'
-    />
+    />}
    </button>
   )
 }
