@@ -1,11 +1,17 @@
 import React from 'react'
 
-const Button = ({label, iconURL}) => {
+const Button = ({label, iconURL,label,
+  backgroundColor,
+  borderColor,
+  textColor}) => {
   return (
-   <button className='flex justify-center items-center gap-2 
+   <button className={`flex justify-center items-center gap-2 
    px-7 py-4 border font-montserrat text-lg 
-   leading-none bg-coral-red
-   rounded-full text-white '>
+   leading-none
+   ${backgroundColor}
+   
+   bg-coral-red
+   rounded-full text-white `}>
     {label}
 
     {iconURL && <img src={iconURL} alt="arrow right icon" 
@@ -16,3 +22,4 @@ const Button = ({label, iconURL}) => {
 }
 
 export default Button
+
